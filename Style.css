@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,800;0,900;1,800&family=Source+Sans+Pro:wght@600&family=Ubuntu+Mono&display=swap');
+body{
+    overflow: hidden;
+    margin: 0;
+    background-color: rgb(219, 219, 219);
+    user-select: none;
+}
+.nav{
+    position: absolute;
+    left: 1050px;
+    top: 10px;
+    font-size: 30px;
+    z-index: 1;
+}
+
+.nav .nav-link{
+    color: rgb(65, 65, 65);
+    text-decoration:none;
+    user-select: none;
+    margin: 10px;
+    z-index: 1;
+}
+.nav .nav-link:hover{
+    text-decoration: overline rgb(168, 129, 0);
+    color: rgb(168, 129, 0);
+    transition: 0.3s;
+    z-index: 1;
+}
+.sun{
+    opacity: 0;
+    position: absolute;
+    top: -195px;
+    left: 1645px;
+    height: 50px;
+    width: 50px;
+
+}
+.sun:hover{
+    cursor: pointer;
+}
+.moon{
+    opacity: 1;
+    position: absolute;
+    top: 100px;
+    z-index: 2;
+    left: 1650px;
+    height: 40px;
+    width: 40px;
+}
+.moon:hover{
+    cursor: pointer;
+}
+.Header{
+    top: 5px;
+    left: 50px;
+    position: absolute;
+    user-select: none;
+    color: rgb(255, 195, 8);
+    /*text-shadow: 0 0 10px rgb(255, 195, 8);*/
+    font-size: 40px;
+    text-decoration: none;
+    z-index: 1;
+    transition: 0.15s;
+}
+.Header:hover{
+    cursor: pointer;
+    transition: 0.15s;
+}
+.HR{
+    position: relative;
+    top: 50px;
+    z-index: 0;
+    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+}
+.navigation-border{
+    position: absolute;
+    background-color: rgb(87, 87, 87);
+    width: 100%;
+    height: 60px;
+    top: 0;
+    z-index: 1;
+}
+.nav .button-main{
+    border: none;
+    font-size:17px;
+    top: -6px;
+    width: 50%;
+    height: 150%;
+    position: absolute;
+    left: 425px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(40, 98, 255);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.nav .button-main:hover{
+    background-color: rgb(255, 162, 13);
+    transition: 0.3s;
+    cursor: pointer;
+    
+
+}
+
+.Modal{
+    user-select: text;
+    border-radius: 50px;
+    background: rgba(52, 52, 52, 0.7);
+    position: absolute;
+    width: 70%;
+    height: 500px;
+    left: 250px;
+    top: 0;
+    opacity: 0;
+    box-shadow: 1px 2px 5px #2f2e2e;
+    backdrop-filter: blur(40px);
+    z-index: 1;
+    transition: 0.5s;
+}
+.Modal h1{
+    position: absolute;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 40px;
+    color: white;
+    left: 150px;
+    top: 0;
+    line-height: 70px;
+}
+
+.btn-back img{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    top: 0;
+    opacity: 0;
+    left: 1250px;
+    z-index: 1;
+    transition: 0.5s;
+}
+.btn-back img:hover{
+    cursor: pointer;
+}
+.Modal-Btn .btn img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 40px;
+    top: 90px;
+    z-index: 3;
+}
+.Modal-Btn .btn img:hover{
+    left: 35px;
+    top: 85px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+.isHas{
+
+}
+
+.left-Modal{
+    position: absolute;
+    border-radius: 2px;
+    background-color: rgba(130, 130, 130, 1);
+    width: 0;
+    height: 100%;
+    left: 0;
+}
+.ModalUs{
+    user-select: text;
+    border-radius: 50px;
+    background: rgba(38,38,38, 0.7);
+    position: absolute;
+    width: 70%;
+    height: 650px;
+    left: 250px;
+    top: 0;
+    opacity: 0;
+    box-shadow: 1px 2px 5px #2f2e2e;
+    backdrop-filter: blur(40px);
+    z-index: 0;
+    transition: 0.5s;
+}
+.ModalUs h1{
+    position: absolute;
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 40px;
+    color: white;
+    left: 20px;
+    top: 40px;
+    line-height: 70px;
+}
+
+.ModalUs #input_1{
+    font-size: 30px;
+    z-index: 2;
+    border: none;
+    width: 270px;
+    border-bottom: 2px solid rgb(95, 95, 95);
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    left: 350px;
+    top: 90px;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 50px;
+}
+.ModalUs #input_1:focus{
+    border-bottom: 2px solid rgb(95, 95, 95);
+    border-radius: 50px;
+    outline: none;
+}
+.ModalUs #input_2{
+    font-size: 30px;
+    z-index: 2;
+    border: none;
+    width: 270px;
+    border-bottom: 2px solid rgb(95, 95, 95);
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    left: 350px;
+    top: 160px;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 50px;
+}
+.ModalUs #input_2:focus{
+    border-bottom: 2px solid rgb(95, 95, 95);
+    border-radius: 50px;
+    outline: none;
+}
+.ModalUs #input_3{
+    font-size: 30px;
+    z-index: 2;
+    border: none;
+    width: 270px;
+    border-bottom: 2px solid rgb(95, 95, 95);
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    left: 350px;
+    top: 230px;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 50px;
+}
+.ModalUs #input_3:focus{
+    border-bottom: 2px solid rgb(95, 95, 95);
+    border-radius: 50px;
+    outline: none;
+}
+.ModalUs .form_modal #input_4{
+    font-size: 30px;
+    z-index: 2;
+    border: none;
+    width: 270px;
+    border-bottom: 2px solid rgb(95, 95, 95);
+    background-color: transparent;
+    position: absolute;
+    color: white;
+    left: 350px;
+    top: 300px;
+    font-family: 'Ubuntu Mono', monospace;
+    border-radius: 50px;
+}
+.ModalUs .form_modal #input_4:focus{
+    border-bottom: 2px solid rgb(95, 95, 95);
+    border-radius: 50px;
+    outline: none;
+}
+.ModalUs #input_4::-webkit-inner-spin-button, .ModalUs #input_4::-webkit-outer-spin-button{
+    appearance: none;
+}
+.ModalUs #btn-send{
+    font-size: 30px;
+    /*background-color: rgb(36, 36, 36);*/
+    background-color: rgba(38,38,38, 0);
+    border: 1px solid rgba(38,38,38, 0);
+    color: rgb(255, 195, 8);
+    /*text-shadow: 0 0 7px rgb(255, 195, 8);*/
+    font-family: 'Ubuntu Mono', monospace;
+    z-index: 1;
+    position: absolute;
+    left: 500px;
+    top: 550px;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+}
+.ModalUs #btn-send:hover{
+    font-size: 29px;
+    cursor: pointer;
+    /*width: 250px;*/
+    /*height: 60px;*/
+    /*left: 475px;*/
+    /*top: 345px;*/
+}
+.ModalUs #btn-send:focus{
+    outline: none;
+}
+.btn-back_2 img{
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    top: 0;
+    opacity: 0;
+    left: 1250px;
+    z-index: 1;
+    transition: 0.5s;
+
+}
+.btn-back_2 img:hover{
+    cursor: pointer;
+}
